@@ -4,7 +4,9 @@ An interactive Power BI dashboard built with Power Query, a star-schema data mod
 
 The project explores revenue, order volume, late deliveries, customer ratings, product categories, seller performance, and freight cost by state. The goal is to turn raw transactional data into insights that can support decisions on logistics, seller management, and product strategy.
 
-![Welcome Page](images/Welcome.png)
+<p align="center">
+  <img src="Olise/image/w1.PNG" alt="Welcome Page" width="100%">
+</p>
 
 ---
 
@@ -120,7 +122,9 @@ In `o_items`, a `total_value` column (`price` + `freight_value`) was also added.
 
 The `o_calendar` table was created with DAX and marked as the date table. The Portuguese-to-English category table was merged into `o_products`, and `o_payments`, `o_geolocation`, and `o_category` are kept in Power Query with load disabled.
 
-![Data Model](images/Data_Model.png)
+<p align="center">
+  <img src="Olise/image/m1.PNG" alt="Data Model" width="100%">
+</p>
 
 ## 6. Metric Definitions
 
@@ -202,8 +206,6 @@ Sales per Seller = DIVIDE([Total Sales], [Sellers])
 
 </details>
 
-![DAX Measures](images/DAX_Measures.png)
-
 ## 7. Dashboard Overview
 
 The project includes a multi-page interactive Power BI report with a landing page, three analysis pages, and a What-If page. Navigation buttons on every page let users move between pages.
@@ -217,24 +219,32 @@ A landing page with three navigation cards: Sales, Delivery, and Products.
 - **KPIs:** Total Sales, Delivered Orders, Avg Rating, Avg Order Value, Late Delivery %.
 - **Charts:** monthly Total Sales trend, top 10 categories by sales, Freight % of Sales by state (top 5), and a state map.
 
-![Sales Page](images/Sales_Page.png)
+<p align="center">
+  <img src="Olise/image/s1.PNG" alt="Sales Dashboard" width="100%">
+</p>
 
 ### Page 2 – Delivery and Customer Satisfaction
 - **KPIs:** Late Orders, Avg Rating, Avg Delivery Days, Late Delivery %, Cancel %.
 - **Charts:** monthly Late Delivery % trend, customer ratings distribution, Avg Rating by delay group, and a state table with orders, delivery days, late %, and rating.
 
-![Delivery Page](images/Delivery_Page.png)
+<p align="center">
+  <img src="Olise/image/d1.PNG" alt="Delivery and Customer Satisfaction Dashboard" width="100%">
+</p>
 
 ### Page 3 – Products and Sellers
 - **KPIs:** Total Orders, Products, Sellers, Avg Price, Sales per Seller, Freight % of Sales.
 - **Charts:** top 10 sellers by sales, Items Sold by category, and a Total Sales treemap by category.
 
-![Products Page](images/Products_Page.png)
+<p align="center">
+  <img src="Olise/image/p1.PNG" alt="Products and Sellers Dashboard" width="100%">
+</p>
 
 ### What-If Page
 A scenario page where a what-if parameter slider drives the Adjusted AOV and Projected Revenue cards, shown next to the actual Avg Order Value.
 
-![What-If Page](images/What_If.png)
+<p align="center">
+  <img src="Olise/image/wi1.PNG" alt="What-If Scenario Page" width="100%">
+</p>
 
 ## 8. Key Results
 
@@ -366,7 +376,7 @@ The repository contains the following files and folders:
 | File or Folder | Description |
 |---|---|
 | `Olist_Dashboard.pbix` | Power BI report containing the data model, measures, and dashboard pages |
-| `images/` | Dashboard screenshots, data model, and DAX measure images |
+| `Olise/image/` | Dashboard screenshots and data model |
 | `README.md` | Project documentation, methodology, results, and recommendations |
 
 To interact with the dashboard, download `Olist_Dashboard.pbix` and open it in Power BI Desktop on Windows. The raw dataset is not included in this repository because of its size and license. Download it from [Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) and update the data source paths in Power Query if you want to refresh the report.
@@ -391,3 +401,9 @@ Interested in turning raw data into meaningful insights through data analysis, v
 - Data Validation
 - Data Visualization
 - Business Reporting
+
+---
+
+## Live Power BI Dashboard
+
+[Open the interactive Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNWY1OTZiYTItNDgzYS00NzBlLWI2MmEtMWUxMmY1MjYwYTBkIiwidCI6IjJiYjZlNWJjLWMxMDktNDdmYi05NDMzLWMxYzZmNGZhMzNmZiIsImMiOjl9&embedImagePlaceholder=true)
